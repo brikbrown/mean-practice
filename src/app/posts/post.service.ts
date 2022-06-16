@@ -27,4 +27,8 @@ export class PostService {
     this.posts.push(post);
     this.postsUpdated.next([...this.posts]);
   }
+
+  deletePost(index: number): void {
+    this.posts.splice(index, 1);
+  }
 }
