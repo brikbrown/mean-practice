@@ -17,7 +17,7 @@ export class PostListComponent implements OnInit {
   constructor(private ps: PostService, private dl: MatDialog) {}
 
   ngOnInit(): void {
-    this.posts = this.ps.getPosts();
+    this.ps.getPosts();
     this.postsSub = this.ps
       .getPostUpdatedListener()
       .subscribe((posts: Post[]) => {
