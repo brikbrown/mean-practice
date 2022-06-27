@@ -1,1 +1,21 @@
-<mat-toolbar color="primary">Mat Toolbar</mat-toolbar>
+<mat-toolbar color="primary">
+  <span>MEAN Stack Practice</span>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>account_circle</mat-icon>
+      <span>Account</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>note_add</mat-icon>
+      <span>New Post</span>
+    </button>
+  </mat-menu>
+  
+</mat-toolbar>

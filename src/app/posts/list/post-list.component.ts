@@ -18,9 +18,7 @@ export class PostListComponent implements OnInit {
 
   ngOnInit(): void {
     this.ps.getPosts();
-    this.postsSub = this.ps
-      .getPostUpdatedListener()
-      .subscribe((posts: Post[]) => {
+    this.postsSub = this.ps.getPostUpdatedListener().subscribe((posts: Post[]) => {
         this.posts = posts;
       });
   }
@@ -34,5 +32,9 @@ export class PostListComponent implements OnInit {
       width: '250px',
       data: id,
     });
+  }
+
+  editPost(id: string): void {
+    
   }
 }
