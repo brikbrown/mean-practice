@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Subscription } from 'rxjs';
-import { Post } from '../post.model';
-import { PostService } from '../post.service';
-import { PostDeleteComponent } from './post-delete/post-delete.component';
+import { Post } from '../../services/interface.service';
+import { PostService } from '../../services/post.service';
+import { PostDeleteComponent } from '../delete/post-delete.component';
 
 @Component({
   selector: 'app-post-list',

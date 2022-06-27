@@ -1,7 +1,7 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Post } from '../../post.model';
-import { PostService } from '../../post.service';
+import { Post } from '../../../services/interface.service';
+import { PostService } from '../../../services/post.service';
 
 @Component({
   selector: 'app-post-create',

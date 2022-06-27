@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { PostService } from '../../post.service';
+import { PostService } from '../../services/post.service';
 
 @Component({
   selector: 'app-post-delete',
