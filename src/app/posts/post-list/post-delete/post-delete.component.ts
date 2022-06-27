@@ -9,14 +9,13 @@ import { PostService } from '../../post.service';
 })
 export class PostDeleteComponent implements OnInit {
 
-  constructor(@Inject(MAT_DIALOG_DATA) private data: number,
+  constructor(@Inject(MAT_DIALOG_DATA) private data: string,
               private ps: PostService) { }
 
   ngOnInit(): void {
   }
 
-  deletePost(): void {
-    console.log(this.data);
+  confirmDelete(): void {
     this.ps.deletePost(this.data);
   }
 

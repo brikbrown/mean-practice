@@ -29,10 +29,10 @@ export class PostListComponent implements OnInit {
     this.postsSub.unsubscribe();
   }
 
-  confirmDelete(i: number): void {
+  confirmDelete(id: string): void {
     const dialogRef = this.dl.open(PostDeleteComponent, {
       width: '250px',
-      data: i,
+      data: id,
     });
   }
 }
