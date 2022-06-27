@@ -12,11 +12,10 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
-import { PostCreateComponent } from './posts/post-create/post-create/post-create.component';
+import { PostCreateComponent } from './posts/create/post-create/post-create.component';
 import { HeaderComponent } from './header/header.component';
-import { PostListComponent } from './posts/post-list/post-list.component';
-import { PostService } from './posts/post.service';
-import { PostDeleteComponent } from './posts/post-list/post-delete/post-delete.component';
+import { PostListComponent } from './posts/list/post-list.component';
+import { PostDeleteComponent } from './posts/delete/post-delete.component';
 
 @NgModule({
   declarations: [
